@@ -344,6 +344,7 @@ This variable has to be set before `no-littering' is loaded.")
 This function overrides the one on `x-win' to use `no-littering'
 directories."
              (expand-file-name session-id ,session-dir)))))
+    (setq ement-sessions-file              (var "ement-sessions.el"))
     (setq emms-directory                   (var "emms/"))
     (eval-after-load 'emojify
       `(make-directory ,(var "emojify/") t))
